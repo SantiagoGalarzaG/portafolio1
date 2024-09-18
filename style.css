@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    /*Se eliminan algunos datos por defecto*/
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*Tamaño de toda la pantalla*/
+    height: 100%;
+    /* color del fondo*/
+    background-color: #000000;
+    /*Color de las letras*/
+    color: #F6F6F6;
+    /*Con 'box-sizing: border-box', el ancho y alto de un elemento incluyen el contenido, 
+   el padding y el borde. Esto hace que sea más fácil controlar su tamaño total. */
+    box-sizing: border-box;
+}
+.titulo-destaque{
+    /*Color texto */
+    color: #22D4FD ;
+}
+.presentacion{
+    /*convierte el contenedor en un flexbox.*/
+    display: flex;
+    /*alinea los elementos dentro del contenedor de manera vertical (en el centro).  */
+    align-items: center;
+    /* 'margin: 10% 15%' establece un margen del 10% arriba y abajo, 
+    y un margen del 15% a la izquierda y derecha*/
+    margin: 10% 15%;
+
+    /* geneta espacio entre elementos*/
+    justify-content: space-between;
+}
+.presentacion__contenido{
+    /* se le da un ancho*/
+    width: 651px;
+    /* convierte el contenedor en un flexbox. */
+    display: flex;
+    /* hace que los elementos dentro del contenedor flex se alineen en 
+    una columna, uno debajo del otro. */
+    flex-direction: column;
+    /* crea un espacio  entre los elementos dentro del contenedor 
+    flex o grid. */
+    gap: 40px;
+}
+.presentacion__contenido__titulo{
+    /* Tamaño de la letra */
+    font-size: 36px;
+    /* Estilo de letra */
+    font-family: "Krona One", sans-serif;
+}
+.presentacion__contenido__texto{
+    /* Tamaño de la letra */
+    font-size: 24px;
+    /* Estilo de letra */
+    font-family: "Montserrat", sans-serif;
+}
+.presentacion__enlaces{
+    /* convierte el contenedor en un flexbox. */
+    display: flex;
+    /* Crea espacio entre los elementos */
+    justify-content: space-between;
+    /* le damos direccion de columna a nuestros elementos */
+    flex-direction: column;
+    gap: 32px;
+    /* ponemos los elementos al centro */
+    align-items: center;
+}
+.presentacion__enlaces__subtitulo{
+    /* Tamaño de la letra */
+    font-size: 24px;
+    /* Estilo de letra */
+    font-family: "Krona One", sans-serif;
+    /* define qué tan grueso o delgado se ve el texto. */
+    font-weight: 400;
+
+}
+.presentacion__enlaces__link{
+    /* Se le da un ancho */
+    width: 378px;
+     /* se alinea el texto al centro */
+    text-align: center;
+    /* se usa un pading el primer valor es para el vertical y el segundo 
+    es el valor del horizontal */
+    padding: 21.5px 0;
+    /* Se redondea el elemento  */
+    border-radius: 8px;
+    /* Estilo de letra */
+    font-family: "Montserrat", sans-serif;
+    /* Tamaño de la letra  */
+    font-size: 24px;
+    /* define qué tan grueso o delgado se ve el texto. */
+    font-weight: 600;
+    /* Se le quita la decoracion al texto*/
+    text-decoration: none;
+    /* Color del texto */
+    color: #F6F6F6;
+    /* Le asignamos un borde de 2px que sea solido y 
+    luego le agregamos el color  */
+    border: 2px  solid #22D4FD ;
+    /*  */
+
+}
+
+.fotoMia{
+    width: 600px;
+    height: 600px;
+}
