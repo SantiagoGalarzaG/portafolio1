@@ -179,3 +179,18 @@ gap: 80px;
         width: 400px;
     }
     }
+
+    @media (max-width:624px){
+        .header__menu{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .header__menu__link:hover{
+            background-color: var(--color-hover);
+        }
+        .footer{
+            width: 100%;
+            position: relative; 
+            padding: 20px;
+        }
+        }
