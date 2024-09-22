@@ -145,8 +145,8 @@ gap: 80px;
     background-color: var(--color-hover);
 }
 .fotoMia{
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
 }
 .footer{
     background-color: var(--color-terciario);
@@ -156,5 +156,20 @@ gap: 80px;
     font-size: 1.5rem;
     font-weight: 400;
     font-family: var(--fuente-monserrat);
+}
 
+@media (max-width:1200px){
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+    justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
 }
