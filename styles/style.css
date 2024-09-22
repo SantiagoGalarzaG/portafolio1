@@ -172,4 +172,10 @@ gap: 80px;
     .presentacion__contenido{
         width: auto;
     }
-}
+    .fotoMia{
+        width: 400px;
+    }
+    .presentacion__enlaces__link{
+        width: 400px;
+    }
+    }
