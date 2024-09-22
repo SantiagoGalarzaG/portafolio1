@@ -1,24 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Uso de variables en css */
+/* pseudo clase que hace un cambio en todos los elementos  de mi proyecto*/
+:root{
+    --color-primario:#060606;
+    --color-secundario:#135D66;
+    --color-terciario:#77B0AA;
+    --color-hover:#1c2724;
+
+    --fuente-monserrat:"Montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+
+}
 *{
     /*Se eliminan algunos datos por defecto*/
     padding: 0;
     margin: 0;
 }
 body{
-    /*Tamaño de toda la pantalla*/
-    height: 100%;
     /* color del fondo*/
-    background-color: #000000;
+    background-color: var(--color-primario);
     /*Color de las letras*/
-    color: #F6F6F6;
+    color: var(--color-secundario);
     /*Con 'box-sizing: border-box', el ancho y alto de un elemento incluyen el contenido, 
    el padding y el borde. Esto hace que sea más fácil controlar su tamaño total. */
     box-sizing: border-box;
 }
-.titulo-destaque{
-    /*Color texto */
-    color: #22D4FD ;
+.header{
+    /*le damos un pading seccionado, el primer valor es el top(hacia arriba),
+    el segundo valor es a la derecha, el tercer valor es el bottom (hacia abajo)
+    y el cuarto valor es el de la izquierda */
+    padding: 2% 0% 0% 10%;
+
 }
+.header__menu{
+display: flex;
+gap: 80px;
+}
+.header__menu__link{
+    font-family:var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight:600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
 .presentacion{
     /*convierte el contenedor en un flexbox.*/
     display: flex;
@@ -26,7 +51,11 @@ body{
     align-items: center;
     /* 'margin: 10% 15%' establece un margen del 10% arriba y abajo, 
     y un margen del 15% a la izquierda y derecha*/
-    margin: 10% 15%;
+    padding: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
 
     /* geneta espacio entre elementos*/
     justify-content: space-between;
@@ -45,15 +74,20 @@ body{
 }
 .presentacion__contenido__titulo{
     /* Tamaño de la letra */
-    font-size: 36px;
+    font-size: 2.25rem;
     /* Estilo de letra */
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque{
+    /*Color texto */
+    color: var(--color-terciario) ;
 }
 .presentacion__contenido__texto{
     /* Tamaño de la letra */
-    font-size: 24px;
+    font-size: 1.5rem;
     /* Estilo de letra */
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
 }
 .presentacion__enlaces{
     /* convierte el contenedor en un flexbox. */
@@ -68,16 +102,16 @@ body{
 }
 .presentacion__enlaces__subtitulo{
     /* Tamaño de la letra */
-    font-size: 24px;
+    font-size: 1.5rem;
     /* Estilo de letra */
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     /* define qué tan grueso o delgado se ve el texto. */
     font-weight: 400;
 
 }
 .presentacion__enlaces__link{
     /* Se le da un ancho */
-    width: 378px;
+    width: 50%;
      /* se alinea el texto al centro */
     text-align: center;
     /* se usa un pading el primer valor es para el vertical y el segundo 
@@ -86,23 +120,41 @@ body{
     /* Se redondea el elemento  */
     border-radius: 8px;
     /* Estilo de letra */
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
     /* Tamaño de la letra  */
-    font-size: 24px;
+    font-size: 1.5rem;
     /* define qué tan grueso o delgado se ve el texto. */
     font-weight: 600;
     /* Se le quita la decoracion al texto*/
     text-decoration: none;
     /* Color del texto */
-    color: #F6F6F6;
+    color: var(--color-secundario);
     /* Le asignamos un borde de 2px que sea solido y 
     luego le agregamos el color  */
-    border: 2px  solid #22D4FD ;
-    /*  */
+    border: 2px  solid var(--color-terciario) ;
+    /* convierte el contenedor en un flexbox. */
+    display: flex;
+    /* Alinea los elementos horizontalmente al centro dentro del contenedor */
+    justify-content: center;
+    /* crea un espacio  entre los elementos dentro del contenedor 
+    flex o grid. */
+    gap: 10px;
 
 }
-
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
 .fotoMia{
-    width: 600px;
-    height: 600px;
+    width: 50%;
+    height: 50%;
+}
+.footer{
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fuente-monserrat);
+
 }
