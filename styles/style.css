@@ -149,6 +149,7 @@ gap: 80px;
     height: 45%;
 }
 .footer{
+    width: 100vw;
     background-color: var(--color-terciario);
     padding: 1.5rem;
     color: var(--color-primario);
@@ -170,13 +171,13 @@ gap: 80px;
         flex-direction: column-reverse;
     }
     .presentacion__contenido{
-        width: auto;
+        width: 90%;
     }
     .fotoMia{
         width: 400px;
     }
     .presentacion__enlaces__link{
-        width: 400px;
+        width: 90%;
     }
     }
 
@@ -189,8 +190,14 @@ gap: 80px;
             background-color: var(--color-hover);
         }
         .footer{
-            width: 100%;
             position: relative; 
             padding: 20px;
         }
         }
+
+        @media (max-width:424px){
+        .presentacion__contenido{
+            width: 90%;
+            }
+            }
+    
